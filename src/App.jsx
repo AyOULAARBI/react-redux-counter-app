@@ -1,5 +1,5 @@
 import { useSelector,useDispatch } from "react-redux";
-import { actions } from "./config/counterReducer";
+import { incr,decr,reset } from "./config/counterReducer";
 
 function App() {
   const num = useSelector(state => state)
@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="App">
       <p>{num}</p>
-      <button onClick={()=>dispatch(actions.incr())}>+</button>
-      <button onClick={()=>dispatch(actions.decr())}>-</button>
+      <button onClick={()=>dispatch(incr())}>+</button>
+      <button onClick={()=>dispatch(decr())}>-</button>
+      <button onClick={()=>dispatch(reset())}>Reset</button>
     </div>
   )
 }

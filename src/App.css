@@ -1,0 +1,31 @@
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h2{
+  font-size: 38px;
+}
+.App{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button{
+  border:none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding:8px;
+  margin:4px
+}
+button:nth-child(1){
+  background-color: rgb(71, 255, 255);
+}
+button:nth-child(2){
+  background-color: rgb(127, 207, 35);
+}
+button:nth-child(3){
+  background-color: rgb(255, 50, 163);
+}
